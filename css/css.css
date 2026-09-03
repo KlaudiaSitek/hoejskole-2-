@@ -1,0 +1,66 @@
+/**
+ * file: css/css.css
+ * purpose: styling
+ **/
+
+/* Remove whitespace on top of certain browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --tekst: rgb(20, 22, 20);
+  --kontrast1: #DB5461;
+  --kontrast2: #686963;
+  --kontrast3: #8AA29E;
+  --kontrast4:#3D5467; 
+  --kontrast5:#F4D35E;
+  --gammelrosa:#f2cfcf5e;
+  
+  --transparent: rgba(255, 255, 255, 0.5);
+}
+body {background-color: #003; color: #fff; font-family: Arial, Helvetica, sans-serif; font-size: 1rem; line-height: 1.5rem;}
+ 
+
+
+
+img {width: 100%; height: auto; display: block; margin: 0 auto;}
+
+h1 {text-align: center; font-size: 2rem; margin: 1rem 0;} 
+h2, h3 {text-align: center; font-size: 1.5rem; margin: 1rem 0;} 
+
+p {padding: 0.5rem 1rem; text-align: justify; text-justify: inter-word;}
+/* Use your variables on elements along these lines */
+/*
+:root {
+  --contrast: lime;
+  --backgr: #000;
+}
+
+--- You can use the variables like this ---
+
+ main {
+   color: var(--contrast);
+   background-color: var(--backgr);
+ }
+*/
+
+/*styles til navigation bar*/
+
+/*sticky navigation bar*/
+nav { position: sticky;
+  top: 0;
+  z-index: 999;
+  color:#003
+  background-color: var(var(--tekst));
+}
+nav a img {width: 50px; height: 50px; margin: 0.5rem; border-radius: 50%;}
+ color: var(--tekst);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+
+/*gøre noget midre */
+nav a img{ width: autopx; height: 999px; margin: 0.5rem; border-radius: 50%;}
